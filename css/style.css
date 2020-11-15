@@ -207,6 +207,8 @@ img {
     background: var(--vilagosturkiz-color);
 }
 
+.nal { color: #000000; text-decoration: none; }
+.nal:hover { color: #000000; text-decoration : underline; }
 .left { text-align: left; }
 .right { text-align: right; }
 .forum-td {	padding: 5px; }
