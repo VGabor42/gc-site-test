@@ -3,6 +3,7 @@
 
 :root {
     --turkiz-color: #5bbad5;
+    --vilagosturkiz-color: #9ad9eb;
     --mustar-color: #E8E8BF;
     --sotetmustar-color: #d3d3a9;
     --uvzold-color: #00dd00;
@@ -178,6 +179,35 @@ img {
 .geoladak table tr:nth-child(odd) {
     background-color: var(--sotetmustar-color);
 }    
+
+
+/* FÓRUM */
+
+.forum {
+    /* height: 400px; */
+    background-color: var(--mustar-color);
+    color: var(--fekete-color);
+    position: relative;
+}
+
+.forum h1 {
+    font-size: 40px;
+}
+
+.forum p {
+    margin: 20px 0;
+}
+
+.forum th {
+    background: var(--vilagosturkiz-color);
+}
+
+.left { text-align: left; }
+.right { text-align: right; }
+.forum-td {	padding: 5px; }
+.strong { font-weight: bold }
+.unread { background-color: #E8E8BF }
+.read { background-color: #F0F0F0 }
 
 /* ÁLTALÁNOSAN HASZNÁLTAK */
 

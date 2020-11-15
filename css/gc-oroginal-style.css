@@ -1,0 +1,781 @@
+:root {
+	--logo-blue: #008FD1;
+	--logo-yellow: #FFD600;
+	--logo-green: #00612E;
+	--logo-orange:#EA670C;
+	--bg-color: #E8E8BF;
+	--blue-lighter: #28BBFF;
+	--yellow-lighter: #ffe14d;
+	--orange-lighter: #f58a3d;
+	--green-lighter: #00b353;
+	
+	background-color: var(--bg-color);
+}
+
+html, body, table, input, textarea, select, div, .main-wrapper {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	hyphens: auto;
+}
+
+p {
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.main-wrapper {
+	margin: 0 auto;
+	background-color: var(--bg-color);
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.menu-wrapper {
+	margin: 0 auto;
+	padding: 5px 0 10px 0;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 723px; 
+}
+
+.general-content-wrapper {
+	margin: 0 auto;
+	box-sizing: border-box;
+	background-color: white;
+	width: 100%;
+	
+}
+
+.coord { font-weight: normal; color: #000000; text-decoration: none;  border-bottom-style : dashed; border-bottom-width : 1px; border-bottom-color : #A0A0A0; }
+.coord:hover { background-color : #F6F2CE; font-weight: normal; color: #000000; text-decoration: none; border-top-style : dashed; border-top-width : 1px; border-top-color : #A0A0A0; }
+
+th { background-color: #E8E8BF; font-weight: bold; text-align: center; }
+.f8 { background-color: #F8F8F8; }
+.f8g { background-color: #F8F8F8; color: #808080; }
+.f8v { background-color: #F8F8F8; color: #E0E0E0; }
+.f0 { background-color: #F0F0F0; }
+.bw { background-color: #000000; color: #FFFFFF; }
+
+.px10 { font-size: 10px; }
+.px11 { font-size: 11px; }
+.px10k { font-size: 10px; color: #000000; }
+.nk { font-weight: normal; color: #000000; }
+.gray { color: #A0A0A0; }
+
+a { 
+	color: var(--logo-orange); 
+	font-weight: 700;
+	text-decoration: none;
+}
+
+a:hover { 
+	text-decoration: underline;
+}
+
+/* szín 20200720-ig: #F6A339 */
+.a10 { font-size: 10px; color: var(--logo-orange); font-weight: bold; }
+.a10n { font-size: 10px; color: #000000; font-weight: normal; }
+.normal { font-size: 11px; color: #000000; font-weight: normal; }
+
+.listheader { color: #000000; text-decoration: none; }
+.listheader:hover { color: #000000; text-decoration: underline; }
+
+.link { color: #000000; font-weight: bold; }
+.normalTXT { font-size: 10px; color: #000000; font-weight: normal; }
+
+
+.text { font-size: 12px; font-weight: normal; font-style: normal; color: #3E3E5E; }
+.header { 
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: bold;
+	color: #353554;  
+}
+.smalltableheader { font-weight: bold; color: #000000; }
+.smalltableheaderblack { font-weight: normal; color: #000000; }
+.smalltabletext { color: #000000; }
+.smalltableheaderwhite { font-weight: bolder; color: #FFFFFF; }
+.v:hover { font-size: 10px; color:  #07A0B2; font-weight: normal; }
+.v:visited { font-size: 10px; color: #000000; font-weight: normal; }
+.v:active { font-size: 10px; color: #000000; font-weight: normal;  }
+.v:link { font-size: 10px; color: #000000; font-weight: normal; }
+.v { font-size: 10px; color: #000000; font-weight: normal; }
+
+.lapozaslink { font-size: 11px; color: #000000; font-weight: normal; text-decoration: none; }
+.lapozaslink0 { font-size: 11px; color: #808080; font-weight: normal; }
+.lapozaslink:hover { color: #000000; font-weight: normal; text-decoration: underline; }
+
+.menulink { font-family: 'Courier New', Courier, monospace; font-size: 12px; color: #FFFFFF; font-weight : normal; text-decoration: none; }
+.menulink:hover { font-family: 'Courier New', Courier, monospace; font-size: 12px; color: #FFFFFF; font-weight : normal; text-decoration: none; color: #000000;	background : #FBF300; }
+.menulist { 
+	font-size: 11px;
+	letter-spacing: -0.05em;
+}
+
+.sidelink { color: #000000; font-weight : normal; text-decoration: none; }
+.sidelink:hover { font-weight : normal; text-decoration: none; color: #000000; text-decoration: underline; }
+
+.bottomlink { font-size: 10px; color: #000000; font-weight : normal; text-decoration: none; }
+.bottomlink:hover { font-size: 10px; color: #000000; font-weight : normal; text-decoration: underline; }
+
+.desc {
+	text-align : justify;
+      	word-break: break-word;
+}
+
+.notes { text-align : justify; background-color : #F8F8F8; border-top-width : 1px; border-top-style : solid; padding-top : 5px; border-bottom-width : 1px; border-bottom-style : solid; padding-bottom : 5px; }
+
+.fixed { font-family: "Courier New", Courier, monospace; font-size: 9pt; }
+
+.forum_topic_link { font-weight : normal; color: #C00000; }
+.forum_topic_link:visited { font-weight : normal; color: #000000; }
+
+.forum_link { color: #000000; font-weight : normal; }
+.forum_link:hover { color: #000000; font-weight : normal; }
+
+.nal { color: #000000; text-decoration: none; }
+.nal:hover { color: #000000; text-decoration : underline; }
+
+li { margin: 6px; }
+
+.hl {
+	background-color : #F9F169;
+}
+
+.forum-td {	padding: 5px; }
+.strong { font-weight: bold }
+.left { text-align: left; }
+.right { text-align: right; }
+
+.unread { background-color: #E8E8BF }
+.read { background-color: #F0F0F0 }
+
+.legomb {font-size: 10px; width:90px; height: 18px; padding: 0px; margin: 0px; color: #000000; text-decoration: none; background-color : #D6D6D6;}
+.legomb:hover{font-size: 10px; width:90px; height: 18px; padding: 0px; margin: 0px; color: #000000; text-decoration: none; background-color : #FBF300;}
+.legomb:disabled {font-size: 10px; width:90px; height: 18px; padding: 0px; margin: 0px; color: #999999; text-decoration: none; background-color : #E5E5E5;}
+
+.t_link {color: #F6A339; font-weight: bold;}
+.t_link:hover { color: #07A0B2; text-decoration: none; }
+
+select.poitype optgroup option, .poi-icon {
+	height: 16px;
+	background-repeat: no-repeat;
+	background-image: url('images/TuristautakPOI.png');
+}
+
+th.poi-type-category {
+	text-align: left;
+}
+
+h1 {
+	font-size: 12pt;
+	margin-top: 0;
+}
+
+.filter-checkbox {
+	text-align: center;
+}
+
+.filter-label {
+	padding-left: 3px;
+}
+
+.filter-category {
+	text-align: left;
+	background-color: #FFFFFF;
+}
+.fb-like {
+	height: 21px;
+	overflow: hidden;
+}
+
+/*******    Fazék, 2017. tavasz óta ******/
+/*******       innéttől lefelé            ******/
+
+
+.button { 
+	background-color:  #008FD1;
+	background-color: var(--logo-blue);
+	color: white;
+	padding: 3px 8px;
+	border-width: 1px;
+	border-color: var(--logo-orange);
+	border-radius: 4px;
+	font-weight: 600; }
+
+.button:hover {
+	background-color: #7fc7e8;
+	color: black;
+}
+
+.button:hover .info-only{
+	background-color: #f58a3d9c;
+}
+
+
+.button a, 
+.button a:link, 
+.button a:visited, 
+.button a:hover, 
+.button a:active {
+	text-decoration: none;
+}
+
+.info-only {
+	background-color: var(--orange-lighter);
+}
+
+.info-only:hover {
+	background-color: #f58a3d9c;
+}
+
+
+.section-head {
+	font-weight: 600;
+	margin-bottom: 0.9rem;
+}
+
+.h1 {
+	font-size: 1.8rem;
+	font-weight: 800; 
+}
+
+.h2 {
+	font-size: 1.5rem;
+	font-weight: 600; 
+}
+
+.h3 {
+	font-size: 1.3rem;
+	font-weight: 600; 
+}
+.h4 {
+	font-size: 1.25rem;
+	font-weight: 500; 
+}
+
+.index_page_moderate_column{
+	background-color: #FFEA7F;
+}
+
+.html-box-wrapper{
+	margin: 2% 2%;
+   	text-align: justify;
+	font-size: 1em;
+	line-height: 1.3em;
+	display: block;
+	position: relative;
+}
+
+.html-box-wrapper a {
+	color: #990000;
+	text-decoration: none;
+}
+
+.html-box-wrapper a:hover {
+	text-decoration: underline;
+}
+
+img.html-box-img-normal{
+   	display: inline;
+	max-width: 720px;
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.content-bookmarks {
+	margin-left: 20px;
+	line-height: 75%;
+ }
+
+div.adoptalhato_warning{
+	background: #81DAF5; 
+	padding: 10px;
+	border: 1px dashed #333;
+}
+
+.in-line-error-msg{
+	border: red solid;
+}
+
+.in-line-warning-msg{
+	border: orange dotted;
+}
+
+.warning-msg {
+	background: #cef; 
+	padding: 5px;
+	border: 1px dashed #333;
+	margin: 0.5rem 0.2rem 1.0rem;
+}
+
+.doc-include {
+	font-size: 14px;
+	background-color: #DDD000;
+}
+
+div.todo-warning {
+	position: absolute;
+	top: 60%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+}
+
+div.todo-warning span {
+	font-weight: bold;
+	color: red; 
+	text-decoration-line: underline;
+}
+
+.logo-color-ruler {
+	border: 0;
+	display: block;
+	height: 12px;
+	width: 84%;
+	margin: 8px auto;
+	background-image: URL("http://www.geocaching.hu/files/pics/gc_logo_color_4px_line.png");
+	background-repeat: repeat-x;
+	background-size: 100% 12px;
+}
+
+.scroll-box {
+	background:#eee;
+	border:2px solid #000;
+	height:140px;
+	overflow:scroll;
+	padding:5px;
+}
+
+img.float-left {
+	float:left;
+	margin: 1rem 3rem 1rem 2rem;
+	border: 1px solid #888; 
+	}
+
+img.float-right {
+	float:right;
+	margin: 1rem 2rem 1rem 3rem;
+	border: 1px solid #888; 
+	}
+
+/* Banner-container design a főoldalra by Fazék, 2018.9.23 */
+
+.rotating-banner-container {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 800px;
+	margin: 3vh auto;
+	display: flex;
+	justify-content: center;
+	border: 1px solid var(--bg-color);
+}
+  
+.banner-container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-container .banner {
+  position: relative;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.banner-container .banner_img {
+  width: 100%;
+  display: block;
+  transition: opacity ease-out 250ms;
+}
+
+.banner-container .banner:hover .banner_img {
+  opacity: 0.4;
+}
+
+.banner-container .banner_title {
+  font-size: 2rem;
+  color: white;
+  white-space: nowrap;
+  margin-bottom: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity ease-out 250ms;
+}
+
+.banner-container .banner:hover .banner_title {
+  opacity: 1;
+}
+
+/* a főoldali Facebook plug-in-hez */
+.fb-container {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 500px; 
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 5px 20px;
+}
+#fb-action {
+	display: inline-block;
+    margin: 0 auto;
+	padding: 5px 5px 15px;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--logo-blue);
+}
+
+.main-page-left {
+	background-color: var(--logo-yellow);
+	width: 120px;
+}
+
+.main-page-center {
+		border: 1px solid #008FD1; 
+		margin-top: 2px;
+		margin-bottom: 4px;
+}
+
+.thumb-column {
+	box-sizing: border-box;
+	max-width: 168px;
+	min-width: 130px;
+	margin: 0 auto;
+	padding: 5px 0;
+}
+
+.thumb-column p {
+	font-weight: 600;
+	margin: 5px 1px 5px;
+   	word-break: break-word;
+}
+
+.thumb-column img {
+	margin: 6px 3px;
+	border: 0;
+}
+img { image-orientation: none;} /* gusty: image exif info disable */
+
+.thumb-frame {
+	box-sizing: border-box;
+	margin: 12px auto;
+	width: 100%;
+	border: 1px solid #E0E0E0;
+	background: #F8F8F8;
+	text-align: center;
+}
+
+/* a cache és poi oldalak jobb oldalán lévő logokhoz kapcsolt thumb-képek */
+div.log-thumbs-wrapper{ 
+	box-sizing: border-box;
+	max-width: 150px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+div.log-thumbs-wrapper img {
+	max-width: 70px;
+	max-height: 70px;
+}
+
+
+.track-link {
+
+	padding: 1px;
+}
+
+.track-link::before {
+	content: '';
+	background: url(/images/geo-location-tag-orange-24px.png);
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+}
+
+
+/*******    Fazék, 20200607     ******/
+/*******    message() függvényhez  ******/
+
+.message-container {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    line-height: 1.4rem;
+    max-width: 600px;
+    width: 100%;
+    padding: 8px 8px 4px 8px;
+    margin: 10px auto;
+    border: 4px solid;
+    border-radius: 10px;
+    background-color: white;	
+}
+
+.message-container.ok    {border-color: var(--logo-green);} 
+.message-container.error {border-color: var(--logo-orange);} 
+.message-container.info  {border-color: var(--logo-yellow);} 
+
+.message-container .message-image{
+    padding: 5px 20px 5px 0px;
+}
+
+.message-container .message-text{
+   align-self: center;
+   flex: 1;
+   font-size: 1.3rem;
+   padding: 5px 5px 5px 15px;
+    
+}
+
+
+/*******    Fazék, 20200702     ******/
+/*******    a végtelen mennyiségű Table eleme kiváltására  ******/
+
+.simple-flex-row {
+   display: flex;
+}
+
+.flex-col {
+   padding: 3px 5px 3px 5px;
+   justify-content: start;
+}
+
+.col-20 { flex: 20%; }
+.col-30 { flex: 30%; }
+.col-50 { flex: 50%; }
+.col-70 { flex: 70%; }
+.col-80 { flex: 70%; }
+
+
+
+/*******    Fazék, 20200618     ******/
+/*******    index.geo refactoring  ******/
+
+.index-page-body-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	margin: 30px 0 0 0;
+	width: 960px;
+	padding: 0;
+}
+
+.index-page-body-wrapper .title {
+	background-color: var(--bg-color);
+	color: var(--logo-green);
+	font-size: 1.3rem;
+	font-weight: 700;
+	border-top-left-radius: 12px;
+	line-height: 1.3;
+	margin: 30px 0 10px;
+	padding: 8px 5% 8px 8%;
+	text-align: left;
+}
+
+.index-page-body-wrapper .link {
+	border-left: 2px solid var(--logo-yellow);
+	border-bottom: 3px solid var(--logo-yellow);
+	border-bottom-left-radius: 8px;
+	font-weight: 500;
+	display: inline-block;  
+	margin-bottom: 5px;
+	padding: 3px 5px 5px 5px;
+	}
+
+.index-page-body-wrapper a {
+	color: #990000;
+	text-decoration: none;
+	font-weight: 700;
+}
+	
+.index-page-body-wrapper a:hover {
+	text-decoration: underline;
+}
+	
+.index-page-left {
+	min-width: 120px;
+	max-width: 300px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 3%;
+	width: 25%;
+}
+
+.index-page-side-banner-box {
+	padding: 10px 2%;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.index-page-side-banner-box img{
+	max-height: 360px;
+	max-width: 100%;
+	width: auto;
+}
+
+.index-page-center {
+	text-align: center;
+	flex-grow: 2;
+	margin: 0;
+	padding: 0 3% 0 5%;
+	width: 75%;
+}
+
+.index_page_cache_info_column {
+	padding: 0;
+}
+
+.index_page_cache_info_column .box {
+	border-left: 2px solid var(--logo-yellow);
+	border-bottom: 3px solid var(--logo-yellow);
+	border-bottom-left-radius: 8px;
+	margin-bottom: 20px;
+	padding: 1px 1px 2px 4px;
+}
+
+.index_page_cache_info_column .box.mentor {
+	background-color: var(--logo-yellow);
+}
+
+.index_page_cache_info_column ._title {
+	color: var(--logo-green);
+	font-size: 1.4rem;
+	font-weight: 700;
+	padding: 20px 0 10px;
+}
+
+.index-page-center .greetings {
+	color: var(--logo-green);
+	font-size: 1.7rem;
+	font-weight: 700;
+	hyphens: none;
+	justify-content: center;
+	line-height: 1.3;
+	padding: 15px 20px;
+}
+
+.news-box {
+	display: grid;
+	grid-template-columns: auto min-content;
+	border-left: 2px solid var(--logo-yellow);
+	border-bottom: 3px solid var(--logo-yellow);
+	border-bottom-left-radius: 8px;
+	border-top: 1px solid var(--logo-blue);
+	margin-bottom: 20px;
+	padding: 1px 1px 2px 4px;
+	text-align: left;
+}
+
+.news-box + div {
+	text-align: right;
+}
+
+.news-box-header {
+	align-self: center;
+	grid-column: 1 / 2;
+	color: var(--logo-green );
+	font-weight: 600;
+	hyphens: none;
+	justify-self: start;
+	padding: 2px 10px 2px 5px;
+}
+
+.news-box-date {
+	grid-column: 2 / 3;
+	justify-self: flex-end;
+	padding: 2px 5px 2px 10px;
+}
+
+.news-box-text {
+	grid-column: 1 / 3;
+	border-top: 1px solid var(--logo-blue);
+	padding: 5px 2px;
+	text-align: justify;
+}
+
+.one-line-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0;
+}
+
+.one-line-flex > div {
+	align-self: flex-end;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	.index-page-body-wrapper {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.index-page-left, .index-page-center {
+		width: 100%;
+	}
+	.index-page-left {
+		order: 2;
+	}
+  }
+
+
+/*******    Fazék, 20200919     ******/
+/*******   a rating/értékelés PNG-k kiváltása SVG-vel  ******/
+svg.rating {
+	height: 14px;
+	width: 70px;
+	stroke-dasharray: 3,1;
+	stroke-width: 4px;
+}
+
+svg.rating text {
+	font-size: 6px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+}
+
+svg.rating path:nth-child(1) { stroke: var(--green-lighter); }
+svg.rating path:nth-child(2) { stroke:  var(--orange-lighter); }
+svg.rating path:nth-child(3) { stroke:  var(--blue-lighter); }
+
+
+/*******    Fazék, 20201102     ******/
+/*******   collection típus     ******/
+.coll-container {
+	box-sizing: border-box;
+	padding: 0.8em 0.3em;
+}
+
+.coll-type {
+
+}
+
+.admin-only {
+	display: block ;
+	border: 1px solid #F0EBD0;
+	background-color: #FFFCEC ;
+}
+
+
+/*******    Bigmick, 2019. nov.     ******/
+/*******    g:hu+ online súgóhoz  ******/
+.legomb2 {font-size: 11px; width:85px; height: 18px; padding: 0px; margin: 0px; color: #48330C; text-decoration: none; background-color : #d0ffffc8;}
+.legomb2:hover{font-size: 11px; width:90px; height: 18px; padding: 0px; margin: 0px; color: #003300; text-decoration: none; font-weight: bold; background-color : #FBF300;}
+.legomb3 {font-size: 12px; width:90px; height: 18px; padding: 0px; margin: 0px; color: #003300; text-decoration: none; background-color : #FBF300;}
+
+@media print{
+   	.noprint{
+  		display:none;
+	}
+}
