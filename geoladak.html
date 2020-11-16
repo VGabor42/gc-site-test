@@ -2,221 +2,230 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <!-- https://cdnjs.com/libraries/font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
     <title>Geocaching Próba</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
-        <div class="container flex">
-            <h1 class="logo"><a href="index.html">geocaching.hu</a></h1>
-            <!-- itt a logo svg lenne, a szöveget még igazítani kell -->
-            <nav>
-                <ul>
-                    <!-- <li><a href="index.html">főoldal</a></li> -->
-                    <li><a href="geoladak.html">geoládák</a></li>
-                    <li><a href="forum.html">fórum</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container flex">
+        <h1 class="logo"><a href="index.html">geocaching.hu</a></h1>
+        <!-- itt a logo svg lenne, a szöveget még igazítani kell -->
+        <nav>
+          <ul>
+            <!-- <li><a href="index.html">főoldal</a></li> -->
+            <li><a href="geoladak.html">geoládák</a></li>
+            <li><a href="forum.html">fórum</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
 
     <!-- GEOLÁDÁK -->
     <section class="geoladak">
-        <div class="container">
-            <div class="geoladak-header-text">
-                <h2>Geoládák</h2>
-                <p>Az oszlopok a fejlécekre kattintva <b>rendezhetők</b> (nevek szerint növekvő, a többi szám szerint
-                    csökkenő
-                    sorrend az alaphelyzet, ismételt kattintással megfordítható). A lista sokféle szempont szerint
-                    <b>szűkíthető</b> az oldal alján levő mezők kitöltésével.</p>
-                <p>Kisebb képernyőkön a megjelenített tartalom eltérhet, a rendelkezésre álló hely miatt kevesebb adat
-                    jelenik meg.</p>
-            </div>
-
-            <div class="geoladak-text">
-                <table style="width:100%">
-                    <tr>
-                        <th>Száma<br>Kódja</th>
-                        <th>Neve</th>
-                        <th>T</th>
-                        <th>Megje-<br>lenés</th>
-                        <th>N<br>T</th>
-                        <th>Úth.</th>
-                        <th>Megye/<br>ország</th>
-                        <th>Mag.</th>
-                        <th>Felhasználó</th>
-                        <th>+</th>
-                        <th>?</th>
-                        <th>-</th>
-                        <th>!</th>
-                        <th>Első<br>log</th>
-                        <th>Utolsó<br>log</th>
-                        <th>Táv<br>[km]</th>
-                        <th>.com</th>
-                        <th>Fény-<br>kép</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                    </tr>
-                    <tr>
-                        <td>9999.<br>GC9999</td>
-                        <td>Ez a 9999. geoláda neve</td>
-                        <td>M</td>
-                        <td>2020.<br>12.31</td>
-                        <td>3.0<br>2.0</td>
-                        <td>1000</td>
-                        <td>Pest</td>
-                        <td>333</td>
-                        <td>User neve<br>szerkesztés</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2020.<br>01.01</td>
-                        <td>2020.<br>05.22</td>
-                        <td>5,3</td>
-                        <td></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>9999.<br>GC9999</td>
-                        <td>Ez a 9999. geoláda neve</td>
-                        <td>M</td>
-                        <td>2020.<br>12.31</td>
-                        <td>3.0<br>2.0</td>
-                        <td>1000</td>
-                        <td>Pest</td>
-                        <td>333</td>
-                        <td>User neve<br>szerkesztés</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2020.<br>01.01</td>
-                        <td>2020.<br>05.22</td>
-                        <td>5,3</td>
-                        <td></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>9999.<br>GC9999</td>
-                        <td>Ez a 9999. geoláda neve</td>
-                        <td>M</td>
-                        <td>2020.<br>12.31</td>
-                        <td>3.0<br>2.0</td>
-                        <td>1000</td>
-                        <td>Pest</td>
-                        <td>333</td>
-                        <td>User neve<br>szerkesztés</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2020.<br>01.01</td>
-                        <td>2020.<br>05.22</td>
-                        <td>5,3</td>
-                        <td></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>9999.<br>GC9999</td>
-                        <td>Ez a 9999. geoláda neve</td>
-                        <td>M</td>
-                        <td>2020.<br>12.31</td>
-                        <td>3.0<br>2.0</td>
-                        <td>1000</td>
-                        <td>Pest</td>
-                        <td>333</td>
-                        <td>User neve<br>szerkesztés</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2020.<br>01.01</td>
-                        <td>2020.<br>05.22</td>
-                        <td>5,3</td>
-                        <td></td>
-                        <td>3</td>
-                    </tr>
-                    <tr>
-                        <td>9999.<br>GC9999</td>
-                        <td>Ez a 9999. geoláda neve</td>
-                        <td>M</td>
-                        <td>2020.<br>12.31</td>
-                        <td>3.0<br>2.0</td>
-                        <td>1000</td>
-                        <td>Pest</td>
-                        <td>333</td>
-                        <td>User neve<br>szerkesztés</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>2020.<br>01.01</td>
-                        <td>2020.<br>05.22</td>
-                        <td>5,3</td>
-                        <td></td>
-                        <td>3</td>
-                    </tr>
-                </table>
-                <h2>Szűrés</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil ducimus nobis, nemo at optio vel,
-                    nulla earum modi similique doloremque eius, consequatur unde dolores culpa eligendi quam!
-                    Recusandae, explicabo, vel ab placeat voluptas fugiat officia nisi similique quibusdam nam amet
-                    repellat quia eligendi laboriosam nulla dolores! Perspiciatis, soluta nulla?</p>
-            </div>
-
+      <div class="container">
+        <div class="geoladak-header-text">
+          <h2>Geoládák</h2>
+          <p>
+            Az oszlopok a fejlécekre kattintva <b>rendezhetők</b> (nevek szerint
+            növekvő, a többi szám szerint csökkenő sorrend az alaphelyzet,
+            ismételt kattintással megfordítható). A lista sokféle szempont
+            szerint <b>szűkíthető</b> az oldal alján levő mezők kitöltésével.
+          </p>
+          <p>
+            Kisebb képernyőkön a megjelenített tartalom eltérhet, a
+            rendelkezésre álló hely miatt kevesebb adat jelenik meg.
+          </p>
         </div>
+
+        <div class="geoladak-text">
+          <table style="width: 100%">
+            <tr>
+              <th>Száma<br />Kódja</th>
+              <th>Neve</th>
+              <th>T</th>
+              <th>Megje-<br />lenés</th>
+              <th>N<br />T</th>
+              <th>Úth.</th>
+              <th>Megye/<br />ország</th>
+              <th>Mag.</th>
+              <th>Felhasználó</th>
+              <th>+</th>
+              <th>?</th>
+              <th>-</th>
+              <th>!</th>
+              <th>Első<br />log</th>
+              <th>Utolsó<br />log</th>
+              <th>Táv<br />[km]</th>
+              <th>.com</th>
+              <th>Fény-<br />kép</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+              <td>9</td>
+              <td>10</td>
+              <td>11</td>
+              <td>12</td>
+              <td>13</td>
+              <td>14</td>
+              <td>15</td>
+              <td>16</td>
+              <td>17</td>
+              <td>18</td>
+            </tr>
+            <tr>
+              <td>9999.<br />GC9999</td>
+              <td>Ez a 9999. geoláda neve</td>
+              <td>M</td>
+              <td>2020.<br />12.31</td>
+              <td>3.0<br />2.0</td>
+              <td>1000</td>
+              <td>Pest</td>
+              <td>333</td>
+              <td>User neve<br />szerkesztés</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2020.<br />01.01</td>
+              <td>2020.<br />05.22</td>
+              <td>5,3</td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>9999.<br />GC9999</td>
+              <td>Ez a 9999. geoláda neve</td>
+              <td>M</td>
+              <td>2020.<br />12.31</td>
+              <td>3.0<br />2.0</td>
+              <td>1000</td>
+              <td>Pest</td>
+              <td>333</td>
+              <td>User neve<br />szerkesztés</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2020.<br />01.01</td>
+              <td>2020.<br />05.22</td>
+              <td>5,3</td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>9999.<br />GC9999</td>
+              <td>Ez a 9999. geoláda neve</td>
+              <td>M</td>
+              <td>2020.<br />12.31</td>
+              <td>3.0<br />2.0</td>
+              <td>1000</td>
+              <td>Pest</td>
+              <td>333</td>
+              <td>User neve<br />szerkesztés</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2020.<br />01.01</td>
+              <td>2020.<br />05.22</td>
+              <td>5,3</td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>9999.<br />GC9999</td>
+              <td>Ez a 9999. geoláda neve</td>
+              <td>M</td>
+              <td>2020.<br />12.31</td>
+              <td>3.0<br />2.0</td>
+              <td>1000</td>
+              <td>Pest</td>
+              <td>333</td>
+              <td>User neve<br />szerkesztés</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2020.<br />01.01</td>
+              <td>2020.<br />05.22</td>
+              <td>5,3</td>
+              <td></td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>9999.<br />GC9999</td>
+              <td>Ez a 9999. geoláda neve</td>
+              <td>M</td>
+              <td>2020.<br />12.31</td>
+              <td>3.0<br />2.0</td>
+              <td>1000</td>
+              <td>Pest</td>
+              <td>333</td>
+              <td>User neve<br />szerkesztés</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>2020.<br />01.01</td>
+              <td>2020.<br />05.22</td>
+              <td>5,3</td>
+              <td></td>
+              <td>3</td>
+            </tr>
+          </table>
+          <h2>Szűrés</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil
+            ducimus nobis, nemo at optio vel, nulla earum modi similique
+            doloremque eius, consequatur unde dolores culpa eligendi quam!
+            Recusandae, explicabo, vel ab placeat voluptas fugiat officia nisi
+            similique quibusdam nam amet repellat quia eligendi laboriosam nulla
+            dolores! Perspiciatis, soluta nulla?
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- LÁBRÉSZ -->
     <footer class="footer bg-dark py-5">
-        <div class="container grid grid-3">
-            <div>
-                <h1>geocaching.hu<sup>&reg;</sup>
-                </h1>
-                <p>A Magyar Geocaching Közhasznú Egyeület hivatalos lapja &copy; 2020</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">főoldal</a></li>
-                    <li><a href="geoladak.html">geoládák</a></li>
-                    <li><a href="forum.html">fórum</a></li>
-                </ul>
-            </nav>
-            <div class="social">
-                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
-            </div>
+      <div class="container grid grid-3">
+        <div>
+          <h1>geocaching.hu<sup>&reg;</sup></h1>
+          <p>
+            A Magyar Geocaching Közhasznú Egyeület hivatalos lapja &copy; 2020
+          </p>
         </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">főoldal</a></li>
+            <li><a href="geoladak.html">geoládák</a></li>
+            <li><a href="forum.html">fórum</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,7 @@
+a fórum a title helytelenül az új sor
+
+&#010
+
+helyesen:
+
+&#10;
