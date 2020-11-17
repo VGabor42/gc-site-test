@@ -1,429 +1,476 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
 :root {
-    --turkiz-color: #5bbad5;
-    --vilagosturkiz-color: #9ad9eb;
-    --mustar-color: #E8E8BF;
-    --sotetmustar-color: #d3d3a9;
-    --uvzold-color: #00dd00;
-    --fekete-color: #000;
-    --feher-color: #fff;
-    --szurke-color: #333;
-    --gcnarancs-color: #FF5A00;
-    --gckek-color: #0098D6;
-    --gczold-color: #00693E;
-    --gcsarga-color: #FFD600;
+  --turkiz-color: #5bbad5;
+  --vilagosturkiz-color: #9ad9eb;
+  --mustar-color: #e8e8bf;
+  --sotetmustar-color: #d3d3a9;
+  --uvzold-color: #00dd00;
+  --fekete-color: #000;
+  --feher-color: #fff;
+  --szurke-color: #333;
+  --gcnarancs-color: #ff5a00;
+  --gckek-color: #0098d6;
+  --gczold-color: #00693e;
+  --gcsarga-color: #ffd600;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    color: var(--szurke-color);
-    line-height: 1.6;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--szurke-color);
+  line-height: 1.6;
 }
 
 ul {
-    list-style-type: none;
-
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--szurke-color);
+  text-decoration: none;
+  color: var(--szurke-color);
 }
 
-h1, h2, h3 {
-    font-weight: 300;
-    line-height: 1.2;
-    margin: 10px 0;
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
 }
 
 p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /* NAVBAR */
 
 .navbar {
-    background-color: var(--turkiz-color);
-    color: var(--szurke-color);
-    height: 70px;
-    
+  background-color: var(--turkiz-color);
+  color: var(--szurke-color);
+  height: 70px;
 }
 
 .navbar ul {
-    display: flex; /* a linkek vízszintes sorban legyenek */
+  display: flex; /* a linkek vízszintes sorban legyenek */
 }
 
 .navbar a {
-    color: var(--szurke-color);
-    padding: 10px;
-    margin: 0 5px;
+  color: var(--szurke-color);
+  padding: 10px;
+  margin: 0 5px;
 }
 
 .navbar a:hover {
-    border-bottom: 2px var(--feher-color) solid;
+  border-bottom: 2px var(--feher-color) solid;
 }
 
 .logo a:hover {
-    border-bottom: 0px var(--feher-color) solid;
+  border-bottom: 0px var(--feher-color) solid;
 }
 
 .navbar .flex {
-    justify-content: space-between; /* csak a navbar esetében legyen széthúzva, egyébként (ld. lent felx-nél) center */
+  justify-content: space-between; /* csak a navbar esetében legyen széthúzva, egyébként (ld. lent felx-nél) center */
 }
 
 .navbar .logo img {
-    height: 30px;
-    width: 30px;
+  height: 30px;
+  width: 30px;
 }
 
 /* SHOWCASE */
 
 .showcase {
-    height: 400px;
-    background-color: var(--mustar-color);
-    color: var(--fekete-color);
-    position: relative;
+  height: 400px;
+  background-color: var(--mustar-color);
+  color: var(--fekete-color);
+  position: relative;
 }
 
 .showcase h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .showcase p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .showcase .grid {
-    overflow: visible;
-    grid-template-columns: 55% auto;
-    gap 30px;
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
 }
 
 .showcase-form {
-    position: relative;
-    top: 60px;
-    height: 350px;
-    width: 400px;
-    padding: 40px;
-    z-index: 100;
-    justify-self: flex-end;
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
 }
 
 .showcase-form .form-control {
-    margin: 30px 0;
+  margin: 30px 0;
 }
 
-.showcase-form input[type=text],
-.showcase-form input[type=email] {
-    color: var(--gckek-color);
-    border: 0;
-    border-bottom: 1px solid var(--gckek-color);
-    width: 100%;
-    padding: 3px;
-    font-size: 16px;
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  color: var(--gckek-color);
+  border: 0;
+  border-bottom: 1px solid var(--gckek-color);
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
 }
 
 .showcase-form input:focus {
-    outline: none;
+  outline: none;
 }
 
-.showcase::before, .showcase::after {
-    content: '';
-    position: absolute;
-    height: 100px;
-    bottom: -70px;
-    right: 0;
-    left: 0;
-    background: var(--feher-color);
-    transform: skewY(-3deg);
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: var(--feher-color);
+  transform: skewY(-3deg);
 }
 
 /* GEOLÁDÁK */
 
 .geoladak {
-    /* height: 400px; */
-    background-color: var(--mustar-color);
-    color: var(--fekete-color);
-    position: relative;
+  /* height: 400px; */
+  background-color: var(--mustar-color);
+  color: var(--fekete-color);
+  position: relative;
 }
 
 .geoladak h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .geoladak p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .geoladak th {
-    background: var(--turkiz-color);
+  background: var(--turkiz-color);
 }
 
 .geoladak-text {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .geoladak .grid {
-    overflow: visible;
-    grid-template-columns: repeat(2, 1fr);
-    gap 30px;
+  overflow: visible;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.geoladak-header-text {
+  background-color: gray; /* TEMP */
 }
 
 .geoladak table tr:nth-child(odd) {
-    background-color: var(--sotetmustar-color);
-}    
-
+  background-color: var(--sotetmustar-color);
+}
 
 /* FÓRUM */
 
 .forum {
-    /* height: 400px; */
-    background-color: var(--mustar-color);
-    color: var(--fekete-color);
-    position: relative;
+  /* height: 400px; */
+  background-color: var(--mustar-color);
+  color: var(--fekete-color);
+  position: relative;
 }
 
 .forum h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .forum p {
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .forum th {
-    background: var(--vilagosturkiz-color);
+  background: var(--vilagosturkiz-color);
 }
 
-.nal { color: #000000; text-decoration: none; }
-.nal:hover { color: #000000; text-decoration : underline; }
-.left { text-align: left; }
-.right { text-align: right; }
-.forum-td {	padding: 5px; }
-.strong { font-weight: bold }
-.unread { background-color: #E8E8BF }
-.read { background-color: #F0F0F0 }
+.nal {
+  color: #000000;
+  text-decoration: none;
+}
+.nal:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+.forum-td {
+  padding: 5px;
+}
+.strong {
+  font-weight: bold;
+}
+.unread {
+  background-color: #e8e8bf;
+}
+.read {
+  background-color: #f0f0f0;
+}
 
 /* ÁLTALÁNOSAN HASZNÁLTAK */
 
 .container {
-    max-width: 1100px; /* ilyen széles lesz maximum a navbar-ban a szöveg */
-    margin: 0 auto; /* fent nincs távolság és középre van igazítva */
-    overflow: auto; /* a h1 margin miatt fent lenne hézag */
-    padding: 0 40px;
+  max-width: 1824px; /* ilyen széles lesz maximum a navbar-ban a szöveg */
+  margin: 0 auto; /* fent nincs távolság és középre van igazítva */
+  overflow: auto; /* a h1 margin miatt fent lenne hézag */
+  padding: 0 60px;
 }
 
 .card {
-    background-color: var(--feher-color);
-    color: var(--szurke-color);
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    margin: 10px;
+  background-color: var(--feher-color);
+  color: var(--szurke-color);
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 10px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background: var(--gckek-color);
-    color: var(--feher-color);
-    border: none;
-    border-radius: 5px;
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--gckek-color);
+  color: var(--feher-color);
+  border: none;
+  border-radius: 5px;
 }
 
 .btn-outline {
-    background-color: transparent;
-    border: 1px var(--szurke-color) solid;
-    color: var(--szurke-color)
+  background-color: transparent;
+  border: 1px var(--szurke-color) solid;
+  color: var(--szurke-color);
 }
 
 .btn:hover {
-    transform: scale(.98);
+  transform: scale(0.98);
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 1fr 1fr; */
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 1fr 1fr; */
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .grid-3 {
-    /* grid-template-columns: repeat(3, 1fr); */
-    grid-template-columns: 3fr 1fr 1fr;
-  }
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 3fr 1fr 1fr;
+}
 
 /* LÁBRÉSZ */
 
 .footer .social a {
-    margin: 0 10px;
-  }
-  
+  margin: 0 10px;
+}
 
-  /* Tablets and under */
+/* Kis laptop és alatta */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  .geoladak-header-text {
+    background-color: pink; /* TEMP */
+  }
+}
+
+/* Kis laptop és alatta */
+@media (max-width: 1224px) {
+  .container {
+    max-width: 1100px;
+    padding: 0 20px;
+  }
+  .geoladak-header-text {
+    background-color: yellow; /* TEMP */
+  }
+}
+
+/* Tablets and under */
 @media (max-width: 768px) {
-    .grid,
-    .showcase .grid,
-    .stats .grid,
-    .cli .grid,
-    .cloud .grid,
-    .features-main .grid,
-    .docs-main .grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-    }
-  
-    .container {
-        padding: 0 20px;
-    }
-
-    .showcase {
-      height: auto;
-    }
-  
-    .showcase-text {
-      text-align: center;
-      margin-top: 40px;
-      animation: slideInFromTop 1s ease-in;
-    }
-  
-    .showcase-form {
-      justify-self: center;
-      margin: auto;
-      animation: slideInFromBottom 1s ease-in;
-    }
-  
-    .cli .grid > *:first-child {
-      grid-column: 1;
-      grid-row: 1;
-    }
-  
-    .features-head,
-    .features-sub-head,
-    .docs-head {
-      text-align: center;
-    }
-  
-    .features-head img,
-    .features-sub-head img,
-    .docs-head img {
-      justify-self: center;
-    }
-  
-    .features-main .grid > *:first-child,
-    .features-main .grid > *:nth-child(2) {
-      grid-column: 1;
-    }
-    .geoladak table th:nth-child(4),
-    .geoladak table th:nth-child(5),
-    .geoladak table th:nth-child(10),
-    .geoladak table th:nth-child(11),
-    .geoladak table th:nth-child(12),
-    .geoladak table th:nth-child(13),
-    .geoladak table th:nth-child(14),
-    .geoladak table th:nth-child(15),
-    .geoladak table th:nth-child(17) {
-       display: none;
-    }
-
-    .geoladak table td:nth-child(4),
-    .geoladak table td:nth-child(5),
-    .geoladak table td:nth-child(10),
-    .geoladak table td:nth-child(11),
-    .geoladak table td:nth-child(12),
-    .geoladak table td:nth-child(13),
-    .geoladak table td:nth-child(14),
-    .geoladak table td:nth-child(15),
-    .geoladak table td:nth-child(17) {
-        display: none;
-     }        
+  .grid,
+  .showcase .grid,
+  .stats .grid,
+  .cli .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
-  
-  /* Mobile */
-  @media (max-width: 500px) {
-    .navbar {
-      height: 110px;
-    }
-  
-    .navbar .flex {
-      flex-direction: column;
-    }
-  
-    .navbar ul {
-      padding: 10px;
-      background-color: rgba(0, 0, 0, 0.1);
-    }
-    
-    .showcase-form {
-      width: 300px;
-    }
 
-    .container {
-        padding: 0 10px;
-    }
-    
-
-    .geoladak p {
-        margin: 5px 0;
-    }
-    
-    .geoladak-header-text {
-        text-align: center;
-        font-size: small;
-        margin-top: 10px;
-    }   
-
-    .geoladak table th:nth-child(4),
-    .geoladak table th:nth-child(5),
-    .geoladak table th:nth-child(6),
-    .geoladak table th:nth-child(7),
-    .geoladak table th:nth-child(8),
-    .geoladak table th:nth-child(10),
-    .geoladak table th:nth-child(11),
-    .geoladak table th:nth-child(12),
-    .geoladak table th:nth-child(13),
-    .geoladak table th:nth-child(14),
-    .geoladak table th:nth-child(15),
-    .geoladak table th:nth-child(17),
-    .geoladak table th:nth-child(18) {
-       display: none;
-    }
-
-    .geoladak table td:nth-child(4),
-    .geoladak table td:nth-child(5),
-    .geoladak table td:nth-child(6),
-    .geoladak table td:nth-child(7),
-    .geoladak table td:nth-child(8),
-    .geoladak table td:nth-child(10),
-    .geoladak table td:nth-child(11),
-    .geoladak table td:nth-child(12),
-    .geoladak table td:nth-child(13),
-    .geoladak table td:nth-child(14),
-    .geoladak table td:nth-child(15),
-    .geoladak table td:nth-child(17),
-    .geoladak table td:nth-child(18) {
-        display: none;
-     }        
+  .geoladak-header-text {
+    background-color: green; /* TEMP */
   }
-  
+
+  .container {
+    max-width: 700px;
+    padding: 0 15px;
+  }
+
+  .showcase {
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center;
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+  .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center;
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1;
+  }
+  .geoladak table th:nth-child(4),
+  .geoladak table th:nth-child(5),
+  .geoladak table th:nth-child(10),
+  .geoladak table th:nth-child(11),
+  .geoladak table th:nth-child(12),
+  .geoladak table th:nth-child(13),
+  .geoladak table th:nth-child(14),
+  .geoladak table th:nth-child(15),
+  .geoladak table th:nth-child(17) {
+    display: none;
+  }
+
+  .geoladak table td:nth-child(4),
+  .geoladak table td:nth-child(5),
+  .geoladak table td:nth-child(10),
+  .geoladak table td:nth-child(11),
+  .geoladak table td:nth-child(12),
+  .geoladak table td:nth-child(13),
+  .geoladak table td:nth-child(14),
+  .geoladak table td:nth-child(15),
+  .geoladak table td:nth-child(17) {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .showcase-form {
+    width: 300px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .geoladak p {
+    margin: 5px 0;
+  }
+
+  .geoladak-header-text {
+    text-align: center;
+    font-size: small;
+    margin-top: 10px;
+    background-color: blue; /* TEMP */
+  }
+
+  .geoladak table th:nth-child(4),
+  .geoladak table th:nth-child(5),
+  .geoladak table th:nth-child(6),
+  .geoladak table th:nth-child(7),
+  .geoladak table th:nth-child(8),
+  .geoladak table th:nth-child(10),
+  .geoladak table th:nth-child(11),
+  .geoladak table th:nth-child(12),
+  .geoladak table th:nth-child(13),
+  .geoladak table th:nth-child(14),
+  .geoladak table th:nth-child(15),
+  .geoladak table th:nth-child(17),
+  .geoladak table th:nth-child(18) {
+    display: none;
+  }
+
+  .geoladak table td:nth-child(4),
+  .geoladak table td:nth-child(5),
+  .geoladak table td:nth-child(6),
+  .geoladak table td:nth-child(7),
+  .geoladak table td:nth-child(8),
+  .geoladak table td:nth-child(10),
+  .geoladak table td:nth-child(11),
+  .geoladak table td:nth-child(12),
+  .geoladak table td:nth-child(13),
+  .geoladak table td:nth-child(14),
+  .geoladak table td:nth-child(15),
+  .geoladak table td:nth-child(17),
+  .geoladak table td:nth-child(18) {
+    display: none;
+  }
+}
