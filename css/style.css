@@ -65,6 +65,20 @@ img {
   display: flex; /* a linkek vízszintes sorban legyenek */
 }
 
+.navbar h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .logo img {
+  height: 100%;
+  min-height: 30px;
+  padding: 0;
+  margin: 0;
+  /* height: 30px; */
+  /* width: 30px; */
+}
+
 .navbar a {
   color: var(--szurke-color);
   padding: 10px;
@@ -81,74 +95,6 @@ img {
 
 .navbar .flex {
   justify-content: space-between; /* csak a navbar esetében legyen széthúzva, egyébként (ld. lent felx-nél) center */
-}
-
-.navbar .logo img {
-  height: 30px;
-  width: 30px;
-}
-
-/* SHOWCASE */
-
-.showcase {
-  height: 400px;
-  background-color: var(--mustar-color);
-  color: var(--fekete-color);
-  position: relative;
-}
-
-.showcase h1 {
-  font-size: 40px;
-}
-
-.showcase p {
-  margin: 20px 0;
-}
-
-.showcase .grid {
-  overflow: visible;
-  grid-template-columns: 55% auto;
-  gap: 30px;
-}
-
-.showcase-form {
-  position: relative;
-  top: 60px;
-  height: 350px;
-  width: 400px;
-  padding: 40px;
-  z-index: 100;
-  justify-self: flex-end;
-}
-
-.showcase-form .form-control {
-  margin: 30px 0;
-}
-
-.showcase-form input[type="text"],
-.showcase-form input[type="email"] {
-  color: var(--gckek-color);
-  border: 0;
-  border-bottom: 1px solid var(--gckek-color);
-  width: 100%;
-  padding: 3px;
-  font-size: 16px;
-}
-
-.showcase-form input:focus {
-  outline: none;
-}
-
-.showcase::before,
-.showcase::after {
-  content: "";
-  position: absolute;
-  height: 100px;
-  bottom: -70px;
-  right: 0;
-  left: 0;
-  background: var(--feher-color);
-  transform: skewY(-3deg);
 }
 
 /* GEOLÁDÁK */
@@ -203,6 +149,11 @@ img {
   font-size: 40px;
 }
 
+.forum img {
+  max-width: 700px;
+  margin-top: 20px;
+}
+
 .forum p {
   margin: 20px 0;
 }
@@ -212,11 +163,11 @@ img {
 }
 
 .nal {
-  color: #000000;
+  color: var(--fekete-color);
   text-decoration: none;
 }
 .nal:hover {
-  color: #000000;
+  color: var(--fekete-color);
   text-decoration: underline;
 }
 .left {
@@ -302,7 +253,12 @@ img {
   margin: 0 10px;
 }
 
-/* Kis laptop és alatta */
+.footer .logo {
+  width: 50%;
+  min-width: 300px;
+}
+
+/* Nagyobb laptop, asztali gép és alatta */
 @media (max-width: 1440px) {
   .container {
     max-width: 1200px;
