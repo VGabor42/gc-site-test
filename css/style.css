@@ -106,6 +106,10 @@ img {
   position: relative;
 }
 
+.geoladak .only-on-mobile {
+  display: none;
+}
+
 .geoladak h1 {
   font-size: 40px;
 }
@@ -242,8 +246,20 @@ img {
   height: 100%;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-3 {
   /* grid-template-columns: repeat(3, 1fr); */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-footer {
+  display: grid;
   grid-template-columns: 3fr 1fr 1fr;
 }
 
@@ -283,45 +299,29 @@ img {
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
-  .showcase .grid,
-  .stats .grid,
-  .cli .grid,
-  .cloud .grid,
-  .features-main .grid,
-  .docs-main .grid {
+  .grid-2,
+  .grid-3,
+  .grid-footer {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    /* grid-columns: 1fr; */
+    /* grid-template-rows: 1fr; */
   }
 
   .geoladak-header-text {
     background-color: green; /* TEMP */
   }
-
+  .geoladak .only-on-mobile {
+    display: inline;
+  }
   .container {
     max-width: 700px;
     padding: 0 15px;
   }
 
-  .showcase {
-    height: auto;
-  }
-
-  .showcase-text {
-    text-align: center;
-    margin-top: 40px;
-    animation: slideInFromTop 1s ease-in;
-  }
-
-  .showcase-form {
-    justify-self: center;
-    margin: auto;
-    animation: slideInFromBottom 1s ease-in;
-  }
-
-  .cli .grid > *:first-child {
+  /* .cli .grid > *:first-child {
     grid-column: 1;
     grid-row: 1;
-  }
+  } */
 
   .features-head,
   .features-sub-head,
@@ -377,10 +377,6 @@ img {
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  .showcase-form {
-    width: 300px;
   }
 
   .container {
