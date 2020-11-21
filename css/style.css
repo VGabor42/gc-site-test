@@ -128,7 +128,7 @@ img {
   background: var(--turkiz-color);
 }
 
-.geoladak-text {
+.geoladak-tablazat {
   margin-top: 20px;
 }
 
@@ -138,7 +138,7 @@ img {
   gap: 30px;
 }
 
-.geoladak-header-text {
+.geoladak-szoveg {
   background-color: gray; /* TEMP */
 }
 
@@ -286,7 +286,7 @@ img {
     max-width: 1200px;
     padding: 0 30px;
   }
-  .geoladak-header-text {
+  .geoladak-szoveg {
     background-color: pink; /* TEMP */
   }
 }
@@ -297,7 +297,7 @@ img {
     max-width: 1100px;
     padding: 0 20px;
   }
-  .geoladak-header-text {
+  .geoladak-szoveg {
     background-color: yellow; /* TEMP */
   }
 }
@@ -313,13 +313,13 @@ img {
     /* grid-template-rows: 1fr; */
   }
 
-  .geoladak-header-text {
+  .geoladak-szoveg {
     background-color: green; /* TEMP */
   }
   .geoladak .only-on-mobile {
     display: inline;
   }
-  .geoladak-text {
+  .geoladak-tablazat {
     font-family: "Ubuntu Condensed", sans-serif;
   }
   .container {
@@ -396,14 +396,14 @@ img {
     margin: 5px 0;
   }
 
-  .geoladak-header-text {
+  .geoladak-szoveg {
     text-align: center;
     font-size: small;
     margin-top: 10px;
     background-color: blue; /* TEMP */
   }
 
-  .geoladak-text {
+  .geoladak-tablazat {
     /* font-family: "Ubuntu", sans-serif; */
   }
 
